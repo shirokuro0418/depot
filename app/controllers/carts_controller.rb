@@ -10,6 +10,8 @@
 # 日本語版については http://ssl.ohmsha.co.jp/cgi-bin/menu.cgi?ISBN=978-4-274-06866-9
 #---
 class CartsController < ApplicationController
+  skip_before_filter :authorize
+
   # GET /carts
   # GET /carts.json
   def index
