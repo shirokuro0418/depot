@@ -10,8 +10,15 @@
 # 日本語版については http://ssl.ohmsha.co.jp/cgi-bin/menu.cgi?ISBN=978-4-274-06866-9
 #---
 Depot::Application.routes.draw do
-  resources :users
+  get "admin" => 'admin#index'
 
+  controller :sessions do
+    get 'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
+
+  resources :users
 
   resources :orders
 
