@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-class SeesionsController < ApplicationController
+class SessionsController < ApplicationController
   def new
   end
 
@@ -14,7 +14,7 @@ class SeesionsController < ApplicationController
   end
 
   def destroy
-    seesion[:user_id] = nil
+    session[:user_id] = nil
     redirect_to store_url, notice: "ログアウト"
   end
 end
