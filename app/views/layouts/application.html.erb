@@ -42,6 +42,7 @@
 	  <li><%= link_to '商品',   products_path %></li>
 	  <li><%= link_to 'ユーザ', users_path	  %></li>
 	</ul>
+	<%= button_to 'ログアウト', logout_path, method: :delete %>
       <% end %>
     </div>
 
