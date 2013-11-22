@@ -11,6 +11,15 @@
  日本語版については http://ssl.ohmsha.co.jp/cgi-bin/menu.cgi?ISBN=978-4-274-06866-9
 =end
 %>
-OrderNotifier#shipped
+<h3>Pragmaticでのご注文商品を発送しました</h3>
+<p>
+  ご注文を発送したことをお知らせいたします。
+</p>
 
-<%= @greeting %>, find me in app/views/app/views/order_notifier/shipped.text.erb
+<table>
+  <tr>
+    <th colspan="2">数量</th>
+    <th>説明</th>
+  </tr>
+  <%= render @order.line_items %>
+</table>
