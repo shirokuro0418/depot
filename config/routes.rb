@@ -10,6 +10,9 @@
 # 日本語版については http://ssl.ohmsha.co.jp/cgi-bin/menu.cgi?ISBN=978-4-274-06866-9
 #---
 Depot::Application.routes.draw do
+  resources :users
+
+
   resources :orders
 
   resources :line_items
