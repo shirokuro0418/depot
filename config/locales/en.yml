@@ -19,7 +19,7 @@ en:
   carts:
     cart:
       title:      "Your Cart"
-      empty:      "Empty cart"
+      empty:      "Empty Cart"
       checkout:   "Checkout"
 
   number:
@@ -30,3 +30,16 @@ en:
         separator:  "."
         delimiter:  ","
         format:     "%u%n"
+
+  orders:
+    new:
+      legend:          "Please Enter Your Details"
+    form:               
+      name:            "Name"
+      addres_html:     "Address"
+      email:           "E-mail"
+      pay-type:        "Pay with"
+      pay_prompt_html: "select a payment method"
+      submit:          "Place Order"
+
+  thanks:              "Thank you for your order"
