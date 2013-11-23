@@ -8,7 +8,7 @@
 
  日本語版については http://ssl.ohmsha.co.jp/cgi-bin/menu.cgi?ISBN=978-4-274-06866-9
 -->
-<div class="cart_title">カート</div>
+<div class="cart_title"><%= t('.title') %></div>
 <table>
   <%= render(cart.line_items) %>
 
@@ -18,6 +18,6 @@
   </tr>
 
 </table>
-<%= button_to "チェックアウト", new_order_path, method: :get %>
-<%= button_to 'カートを空にする', cart, method: :delete,
+<%= button_to t('.checkout'), new_order_path, method: :get %>
+<%= button_to t('.empty'), cart, method: :delete,
     confirm: '本当によいですか？' %>
