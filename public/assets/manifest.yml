@@ -1,0 +1,17 @@
+---
+cs.jpg: cs.jpg
+cs/index.jpg: cs.jpg
+logo.png: logo.png
+logo/index.png: logo.png
+rails.png: rails.png
+rails/index.png: rails.png
+rtp.jpg: rtp.jpg
+rtp/index.jpg: rtp.jpg
+ruby.jpg: ruby.jpg
+ruby/index.jpg: ruby.jpg
+application.js: application.js
+application/index.js: application.js
+application.css: application.css
+application/index.css: application.css
+jquery.min.map: jquery.min.map
+jquery/index.min.map: jquery.min.map
